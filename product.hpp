@@ -48,9 +48,10 @@ namespace itertools {
 
             bool operator!=(const iterator &other)  {
                 return ((xStart != other.xStart)&&(yStart != other.yStart));
+            
             }
             bool operator==(const iterator &other)  {
-                return ((xStart == other.xStart)&&(yStart == other.yStart));
+                return ((xStart == other.xStart)||(yStart == other.yStart));
             }
         };
 
